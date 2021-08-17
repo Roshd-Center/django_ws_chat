@@ -1,5 +1,5 @@
 """
-ASGI config for django_socket project.
+ASGI config for django_ws_chat project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -15,7 +15,7 @@ from django.core.asgi import get_asgi_application
 
 from chat import routing
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_socket.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_ws_chat.settings')
 
 application = ProtocolTypeRouter({
     'http': get_asgi_application(),
